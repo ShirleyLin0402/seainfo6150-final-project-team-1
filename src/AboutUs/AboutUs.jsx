@@ -6,22 +6,18 @@ const AboutUs = () => {
     return (
         <div>
         <div className={styles.imageContainer}>
-          <img className={styles.image} src="images/campus1.jpg" alt="Campus" />
-          <div className={styles.textOnImage}>Established in 1936, Seattle Technological University <br />is the oldest
-  institution of higher education in Seattle</div>
+          <img className={styles.image} src="images/AboutUs.jpg" alt="CakeShop" />
+          /*<div className={styles.textOnImage}>Established in 2019, our cake shop produce lots of interesting flavors</div>*/
 </div>
 <div className={styles.content}>
-  <p>Seattle Technological University is devoted to excellence in teaching,
-  learning, and research, and to developing leaders in many disciplines who
-  make a difference globally. We have an enrollment of over <strong>20,000</strong> degree
-  candidates, including undergraduate, graduate, and professional students.
-  We have more than <strong>360,000</strong> alumni around the world.</p>
-  <p>Our faculty are engaged with teaching and research to push the boundaries
-  of human knowledge. For students who are excited to investigate the
-  biggest issues of the 21st century, we offer an unparalleled student
-  experience and a generous financial aid program, with over <strong>$160 million </strong>
-  awarded to more than <strong>60%</strong> of our undergraduate students. We have six
-  degree-granting Schools, offering a truly global education.</p>
+  <p>Lark Cake Shop opened in 2007 on an (at the time) unlikely stretch of Sunset Blvd. We started with the idea of baking cakes, cupcakes, cookies, pies and bars that would be inspired by the bohemian modern esthetic of Silver Lake. The “look” of our baked goods would be stylized and simple, refined yet interesting. The taste; delicious and homemade. In 2015, we added a second location in the Historic Highlands neighborhood of Pasadena. The neighborhood has welcomed us with open arms and we look forward to becoming an even bigger part of the community each and every year.
+</p>
+<p>
+We specialize in the rich, sweet and delicious. Whenever possible we use the freshest locally produced or distributed ingredients in our products. We crack our own eggs every day. We do not use liquid eggs or other food service shortcuts. We use top of the line gourmet ingredients in all our recipes. Our dairy supplier is the Challenge Dairy Cooperative, a cooperative of more than 600 California dairies. We try to minimize our environmental footprint by using compostable cups, clamshell boxes, utensils and straws. We also use paper bags and boxes whenever possible.
+</p>
+<p>
+Family owned and operated, Lark Cake Shop is committed to serving the finest baked goods available and providing unmatched customer service. We look forward serving you!
+</p>
 </div>
         </div>
     )
