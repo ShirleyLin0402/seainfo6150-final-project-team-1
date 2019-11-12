@@ -1,0 +1,29 @@
+.imageContainer{
+	margin-top: 125px;
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.image{
+	height: 603px;
+	width: 100%;
+}
+
+.content{
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 2.5;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: sans-serif;
+}
+
+.textOnImage {
+  position: absolute;
+  color: #ddf5d7;
+  right: 100px;
+  bottom: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
