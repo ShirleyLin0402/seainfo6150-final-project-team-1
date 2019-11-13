@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs/AboutUs.jsx";
 import Header from "./Header/Header.jsx";
 import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
+import ContactUs from "./ContactUs/ContactUs.jsx";
 import Error from "./Error/Error.jsx";
 
 const externalContent = {
@@ -18,7 +19,7 @@ const externalContent = {
 function App() {
   return (
     <Router>
-      
+
       {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
       <Switch>
@@ -39,7 +40,9 @@ function App() {
           exact
           render={() => <Baz content={externalContent} />}
         />
+          <Route path="/ContactUs" exact component={ContactUs} />
         <Route component={Error} />
+
       </Switch>
     </Router>
   );
