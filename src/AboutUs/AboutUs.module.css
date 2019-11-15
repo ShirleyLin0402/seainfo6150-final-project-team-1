@@ -1,22 +1,67 @@
 .imageContainer{
-	margin-top: 125px;
+	margin-top: 25px;
+	margin-bottom: -15px;
 	margin-left: -2px;
 	margin-right: -2px;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+
+}
+
+html{
+	background-color: #f2debd;
+	
 }
 
 .image{
-	height: 500px;
+	height: 75%;
 	width: 75%;
+
+}
+.sectitle{
+	text-align: center;
+	color: grey;
 }
 
+.image2{
+	height:50%;
+	width: 50%;
+}
+
+.image3{
+	height:50%;
+	width: 50%;
+}
+.image4{
+	height:50%;
+	width: 50%;
+}
+
+h3{
+	font-family: cursive;
+	font-size:30px;
+	margin-bottom: -5px;
+	margin-top: 10px;
+	text-align: center;
+
+
+}
 .content{
-	font-size: 20px;
+	text-align: center;
+	font-size: 15px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 2.5;
 	padding-left: 10px;
 	padding-right: 10px;
 	font-family: sans-serif;
+
 }
 
 .textOnImage {

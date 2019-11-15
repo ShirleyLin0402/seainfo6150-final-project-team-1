@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styles from './Form.module.css';
 
 export default class Form extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ export default class Form extends Component {
     ) : (
       <form onSubmit={this.onSubmit}>
         <input type="text" name="myText" />
-        <input type="submit" value="Send it" />
+        <input type="submit" value="Submit" />
       </form>
     );
   }
