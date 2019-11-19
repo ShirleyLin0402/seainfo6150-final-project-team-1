@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
+import online_data from "./data/onlineshop.json";
 import Home from "./Home/Home.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
 import Header from "./Header/Header.jsx";
@@ -8,6 +9,7 @@ import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import ContactUs from "./ContactUs/ContactUs.jsx";
 import Error from "./Error/Error.jsx";
+import OnlineShop from "./OnlineShop/OnlineShop.jsx";
 
 const externalContent = {
   id: "article-1",
@@ -39,6 +41,11 @@ function App() {
           path="/baz"
           exact
           render={() => <Baz content={externalContent} />}
+        />
+         <Route
+          path="/store"
+          exact
+          render={() => <OnlineShop online_data={Object.values(online_data)} />}
         />
           <Route path="/ContactUs" exact component={ContactUs} />
         <Route component={Error} />
