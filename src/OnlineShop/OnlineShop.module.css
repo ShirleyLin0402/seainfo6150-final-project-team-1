@@ -1,7 +1,0 @@
-.feedlist {
-    display: grid;
-    width: 95%;
-    grid-template-columns: repeat(3, 33.3%);
-    list-style: none;
-    margin: 6rem auto;
-}

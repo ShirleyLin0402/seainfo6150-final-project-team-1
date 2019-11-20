@@ -1,0 +1,29 @@
+@value gridBaseline from '../../metrics/metrics.module.css';
+@value monoBlackA300, monoBlackA200, colorRed, colorBrand from '../../colors/colors.module.css';
+
+.input {
+  font-family: 'Arial, Helvetica, sans-serif';
+  font-size: inherit;
+  box-sizing: border-box;
+  border: 1px solid;
+  cursor: text;
+  outline: 0;
+  appearance: none;
+  padding: 9px 12px 10px;
+  border-radius: gridBaseline;
+  border-color: monoBlackA300;
+  height: 100%;
+  max-width: 100%;
+}
+
+.input:hover {
+  border-color: monoBlackA200;
+}
+
+.input:focus {
+  border-color: colorBrand;
+}
+
+.input.error {
+  border-color: colorRed;
+}

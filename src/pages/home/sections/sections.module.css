@@ -1,0 +1,62 @@
+@value gridBaseline, xsmallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../../ui/base/metrics/metrics.module.css';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: gridBaseline
+}
+
+.title {
+  margin: calc(gridBaseline * 2) 0;
+}
+
+.description {
+  margin-bottom: calc(gridBaseline * 2);
+}
+
+.button {
+  composes: textMedium from '../../../ui/base/font/font.module.css';
+
+  display: none;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {  
+  .title {
+    margin: calc(gridBaseline * 4) 0;
+  }
+  
+  .description {
+    margin-bottom: calc(gridBaseline * 4);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    margin: auto 0 gridBaseline;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sectionWrapper {
+    width: 30%;
+    margin: calc(gridBaseline * 2) 0
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .button {
+    composes: textLarge from '../../../ui/base/font/font.module.css';
+
+    margin-bottom: calc(gridBaseline * 2);
+  }
+
+  .sectionWrapper {
+    margin: calc(gridBaseline * 2) 0
+  }
+}

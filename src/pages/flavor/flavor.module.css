@@ -1,0 +1,27 @@
+@value gridBaseline, xsmallBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
+
+.img {
+  display: flex;
+  justify-content: center;
+  height: calc(gridBaseline * 20);
+}
+
+.img > img {
+  height: 100%;
+}
+
+.title {
+  margin: calc(gridBaseline * 2) 0 gridBaseline;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .title {
+    margin: calc(gridBaseline * 3) 0 calc(gridBaseline * 2);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .title {
+    margin: calc(gridBaseline * 6) 0 calc(gridBaseline * 4);
+  }
+}

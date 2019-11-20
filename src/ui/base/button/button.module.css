@@ -1,0 +1,73 @@
+@value gridBaseline from '../metrics/metrics.module.css';
+@value monoBlack, monoBlackA400, monoBlackA300, monoBlackA200, monoBlackA100, colorBrand, colorBrandltraLight, colorBrandLight, colorBrandDark from '../colors/colors.module.css';
+
+.button {
+  border: 1px solid transparent;
+  border-radius: gridBaseline;
+  letter-spacing: 0.01rem;
+  margin: 0;
+  outline: 0;
+  padding: gridBaseline calc(gridBaseline * 2);
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear;
+  vertical-align: middle;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button.strentch {
+  width: 100%;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.secondary {
+  composes: button;
+
+  background-color: transparent;
+  border-color: monoBlackA300;
+  color: monoBlack;
+}
+
+.secondary.hoverEnabled:hover {
+  border-color: monoBlackA200;
+}
+
+.secondary:focus, .secondary:active {
+  border-color: monoBlackA100;
+}
+
+.secondary:active {
+  background-color: monoBlackA400;
+}
+
+.secondary:disabled {
+  border-color: monoBlackA300;
+  color: monoBlackA300;
+}
+
+.primary {
+  composes: button;
+
+  color: monoBlack;
+  background-color: colorBrand;
+}
+
+.primary.hoverEnabled:hover {
+  background-color: colorBrandLight;
+}
+
+.primary:focus {
+  background-color: colorBrandLight;
+  border-color: colorBrandDark;
+}
+
+.primary:active {
+  background-color: colorCanvaBrandDark;
+}
+
+.primary:disabled {
+  background-color: monoBlackA400;
+  color: monoBlackA200;
+}

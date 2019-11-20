@@ -1,0 +1,33 @@
+@value gridBaseline, xsmallBreakpoint from '../../../ui/base/metrics/metrics.module.css';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.description {
+  margin-bottom: gridBaseline;
+}
+
+.img {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  height: calc(gridBaseline * 12);
+}
+
+.link {
+  margin-top: gridBaseline;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .img {
+    height: calc(gridBaseline * 15);
+  }
+}

@@ -1,0 +1,43 @@
+@value gridBaseline, smallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: calc(gridBaseline * 2);
+}
+
+.giftCardList {
+  composes: list;
+}
+
+.title, .section {
+  margin-bottom: calc(gridBaseline * 2);
+}
+
+@media screen and (min-width: smallBreakpoint) {
+  .title, .section {
+    margin-bottom: calc(gridBaseline * 4);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: calc(gridBaseline * 4);
+  }
+
+  .title, .section {
+    margin-bottom: calc(gridBaseline * 6);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: calc(gridBaseline * 6);
+  }
+
+  .giftCardList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

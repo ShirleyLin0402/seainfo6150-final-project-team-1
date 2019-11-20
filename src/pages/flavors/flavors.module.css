@@ -1,0 +1,22 @@
+@value gridBaseline, mediumBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
+
+.list {
+  margin-top: gridBaseline;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: calc(4 * gridBaseline) calc(gridBaseline * 3);
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .list {
+    grid-template-columns: auto auto auto;
+    gap: calc(gridBaseline * 4);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .list {
+    grid-template-columns: auto auto auto auto;
+    gap: calc(gridBaseline * 6);
+  }
+}

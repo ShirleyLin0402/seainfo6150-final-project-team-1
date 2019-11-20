@@ -1,0 +1,46 @@
+@value gridBaseline, smallBreakpoint, mediumBreakpoint, largeBreakpoint from '../base/metrics/metrics.module.css';
+@value monoBlack from '../base/colors/colors.module.css';
+@value fontWeightRegular, titleFontWeight from '../base/font/font.module.css';
+
+.link {
+  composes: titleMedium from '../base/font/font.module.css';
+  font-weight: fontWeightRegular;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.activeLink {
+  font-weight: titleFontWeight;
+}
+
+.header {
+  padding: 0 calc(gridBaseline * 2);
+  margin: calc(gridBaseline * 2) 0 gridBaseline;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: gridBaseline;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
+  color: monoBlack;
+}
+
+.optionalItem {
+  display: none;
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .optionalItem {
+    display: unset;
+  }
+}

@@ -1,0 +1,56 @@
+@value monoBlack, monoBlackA100 from '../base/colors/colors.module.css';
+@value gridBaseline, xsmallBreakpoint, mediumBreakpoint, largeBreakpoint from '../base/metrics/metrics.module.css';
+@value fontWeightRegular, titleFontWeight from '../base/font/font.module.css';
+
+.footer {
+  padding-top: gridBaseline;
+  margin-bottom: calc(gridBaseline * 4);
+  border-top: 1px solid monoBlackA100;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  padding: gridBaseline;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  color: monoBlack;
+}
+
+.link {
+  composes: titleSmall from '../base/font/font.module.css';
+  font-weight: fontWeightRegular;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.activeLink {
+  font-weight: titleFontWeight;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .footer {
+    padding-top: calc(gridBaseline * 2);
+  }
+
+  .nav {
+    padding: gridBaseline calc(gridBaseline * 2);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .nav {
+    padding: calc(gridBaseline * 2) calc(gridBaseline * 4);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .nav {
+    padding: calc(gridBaseline * 2) calc(gridBaseline * 6);
+  }
+}

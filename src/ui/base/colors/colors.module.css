@@ -1,0 +1,20 @@
+@value white_rgb: 255, 255, 255;
+@value monoWhite: rgb(white_rgb);
+@value monoWhiteA100: rgba(white_rgb, 0.7);
+
+@value black_rgb: 14, 19, 24;
+@value monoBlack: rgb(black_rgb);
+@value monoBlackA100: rgba(black_rgb, 0.7);
+@value monoBlackA150: rgba(black_rgb, 0.6);
+@value monoBlackA200: rgba(black_rgb, 0.45);
+@value monoBlackA250: rgba(black_rgb, 0.3);
+@value monoBlackA275: rgba(black_rgb, 0.25);
+@value monoBlackA300: rgba(black_rgb, 0.2);
+@value monoBlackA400: rgba(black_rgb, 0.15);
+
+@value colorRed: rgb(248,72,86);
+
+@value colorBrand: rgb(251, 190, 40);
+@value colorBrandltraLight: rgb(255, 237, 189);
+@value colorBrandLight: rgb(255, 209, 94);
+@value colorBrandDark: rgb(235, 168, 0);

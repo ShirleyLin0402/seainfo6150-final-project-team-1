@@ -1,0 +1,29 @@
+@value gridBaseline, xsmallBreakpoint, smallBreakpoint, mediumBreakpoint, largeBreakpoint from '../base/metrics/metrics.module.css';
+
+.logo {
+  height: calc(gridBaseline * 4);
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .logo {
+    height: calc(gridBaseline * 6);
+  }
+}
+
+@media screen and (min-width: smallBreakpoint) {
+  .logo {
+    height: calc(gridBaseline * 8);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .logo {
+    height: calc(gridBaseline * 10);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .logo {
+    height: calc(gridBaseline * 12);
+  }
+}

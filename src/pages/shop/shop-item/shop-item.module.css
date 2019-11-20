@@ -1,0 +1,56 @@
+@value gridBaseline, xsmallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../../ui/base/metrics/metrics.module.css';
+
+.shopItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-top: gridBaseline;
+  text-decoration: none;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  height: calc(gridBaseline * 10);
+  overflow: hidden;
+}
+
+.img > img {
+  height: 100%;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .title {
+    margin-top: calc(gridBaseline * 2);
+  }
+
+  .img {
+    height: calc(gridBaseline * 15);
+  }
+}
+
+@media screen and (min-width: smallBreakpoint) {
+  .title {
+    margin-top: calc(gridBaseline * 3);
+  }
+
+  .img {
+    height: calc(gridBaseline * 20);
+  }
+}
+
+
+@media screen and (min-width: mediumBreakpoint) {
+  .title {
+    margin-top: calc(gridBaseline * 4);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .img {
+    height: calc(gridBaseline * 25);
+  }
+}

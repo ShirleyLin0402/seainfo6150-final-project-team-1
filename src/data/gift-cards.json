@@ -1,0 +1,23 @@
+[
+  {
+    "name":"$30 Gift Card",
+    "id": "gift-card-30",
+    "price":"$30.00",
+    "description": "Treat friends and family with a trip to the shop with one of our seasonal gift cards!Cards do not expire.",
+    "image":"https://www.degruchys.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/g/i/gift_card_2016_copy.jpg"
+  },
+  {
+    "name":"$50 Gift Card",
+    "id": "gift-card-50",
+    "price":"$50.00",
+    "description": "Treat friends and family with a trip to the shop with one of our seasonal gift cards!Cards do not expire.",
+    "image":"https://www.degruchys.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/g/i/gift_card_2016_copy.jpg"
+  },
+  {
+    "name":"$75 Gift Card",
+    "id": "gift-card-75",
+    "price":"$75.00",
+    "description": "Treat friends and family with a trip to the shop with one of our seasonal gift cards!Cards do not expire.",
+    "image":"https://www.degruchys.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/g/i/gift_card_2016_copy.jpg"
+  }
+]

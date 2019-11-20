@@ -1,0 +1,29 @@
+@value monoBlack, monoBlackA200 from '../colors/colors.module.css';
+
+.titleSmall {
+  composes: titleSmall from '../font/font.module.css';
+  text-align: center;
+  color: monoBlack;
+}
+
+.titleMedium {
+  composes: titleMedium from '../font/font.module.css';
+  text-align: center;
+  color: monoBlack;
+}
+
+.titleLarge {
+  composes: titleLarge from '../font/font.module.css';
+  text-align: center;
+  color: monoBlack;
+}
+
+.textMedium {
+  composes: textMedium from '../font/font.module.css';
+  color: monoBlack;
+}
+
+.textCaption {
+  composes: textMedium;
+  color: monoBlackA200;
+}
