@@ -18,7 +18,7 @@
   "categoryId":"StrawberryCake",
   "title":"Strawberry Cake",
   "slug":"Details",
-  "description":"Big juicy strawberries in fresh whipped cream snuggled between layers of sponge cake. The ultimate experience.",
+  "description":"Big juicy strawberries in fresh whipped cream snuggled between layers of sponge cake.",
   "price":"$59",
   "image":{
     "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_18.jpg",
@@ -57,7 +57,7 @@
   "id":"5",
   "categoryId":"GreenTeaMousse",
   "title":"Green Tea Mousse",
-  "description":"A bittersweet organic green tea mousse with sweet azuki beans, enveloped in fresh whipped cream.",
+  "description":"A bittersweet organic green tea mousse with sweet azuki beans",
   "price":"$59",
   "image":{
     "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_04.jpg",
@@ -70,7 +70,7 @@
  "id":"6",
  "categoryId":"SakuraCake",
  "title":"Sakura Cake",
- "description":"Sweet azuki beans enveloped in a delicate sakura cherry blossom flavored mousse, decorated with sugared cherry blossoms.",
+ "description":"Sweet azuki beans enveloped in a delicate sakura cherry blossom flavored mousse",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_05.jpg",
@@ -83,7 +83,7 @@
  "id":"7",
  "categoryId":"MelonCake",
  "title":"Melon Cake",
- "description":"Sponge cake smothered with slices of ripe melon and fresh whipped cream, covered with a layer of whole cream.",
+ "description":"Sponge cake smothered with slices of ripe melon and fresh whipped cream",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_06.jpg",
@@ -96,7 +96,7 @@
  "id":"8",
  "categoryId":"StrawberryChocolateCake",
  "title":"Strawberry Chocolate Cake",
- "description":"Layers of bitter chocolate sponge cake packed with juicy strawberries in our special whipped cream.",
+ "description":"Layers of bitter chocolate sponge cake packed with juicy strawberries",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_03.jpg",
@@ -109,7 +109,7 @@
  "id":"9",
  "categoryId":"MarronTart",
  "title":"Marron Tart",
- "description":"Chocolate chips in fresh whipped cream fill the base of the tart, topped with generous lumps of chestnut cream.",
+ "description":"Chocolate chips in fresh whipped cream fill the base of the tart",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_13.jpg",
@@ -122,7 +122,7 @@
  "id":"10",
  "categoryId":"BananaCreamPie",
  "title":"Banana Cream Pie",
- "description":"Custard cream is spread across the bottom of the piecrust and lined with whole bananas before being smothered with fresh chocolate whipped cream.",
+ "description":"Custard cream is spread across the bottom of the piecrust",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_14.jpg",
@@ -135,7 +135,7 @@
  "id":"11",
  "categoryId":"ChocolateCake",
  "title":"Chocolate Cake",
- "description":"Chocolate sponge cake smothered in chocolate cream and walnuts, with a hint of brandy for that special richness.",
+ "description":"Chocolate sponge cake smothered in chocolate cream and walnuts",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_16.jpg",
@@ -148,7 +148,7 @@
  "id":"",
  "categoryId":"RoyalMilkTeaCake",
  "title":"Royal Milk Tea Cake",
- "description":"This dark tea sponge cake paired with cream will fill your senses with the flavor and fragrance of royal milk tea.",
+ "description":"This dark tea sponge cake paired with cream will fill your senses",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_02.jpg",
@@ -161,7 +161,7 @@
  "id":"13",
  "categoryId":"BlackandWhiteChocolateCake",
  "title":"Black and White Chocolate Cake",
- "description":"A chocolate chiffon cake baked with the fragrant presence of cashews, embellished with a rich white chocolate cream.",
+ "description":"A chocolate chiffon cake baked with the fragrant presence of cashews",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_17.jpg",
@@ -174,7 +174,7 @@
  "id":"14",
  "categoryId":"MochaCake",
  "title":"Mocha Cake",
- "description":"Bits of coffee jelly in mocha cream fill the spaces between layers of spicy cinnamon sponge cake. Ideal for the not-so-sweet tooth.",
+ "description":"Bits of coffee jelly in mocha cream fill the spaces between layers",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_15.jpg",
@@ -187,7 +187,7 @@
  "id":"15",
  "categoryId":"MarronChocolateCake",
  "title":"Marron Chocolate Cake",
- "description":"Chocolate sponge cake with just a bit of bitterness filled with sliced chestnuts in chocolate cream - lots of it.",
+ "description":"Chocolate sponge cake with just a bit of bitterness",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_12.jpg",
@@ -200,7 +200,7 @@
  "id":"16",
  "categoryId":"CitronCake",
  "title":"Citron Cake",
- "description":"Lemon rind is baked into the sponge cake to make this zesty sandwich of fresh squeezed lemon jelly and lemon flavored mixed cream.",
+ "description":"This zesty sandwich of fresh squeezed lemon jelly and lemon flavored mixed cream.",
  "price":"$59",
  "image":{
    "url":"http://www.harbs.co.jp/harbs/img_eng/menu_cake_07.jpg",

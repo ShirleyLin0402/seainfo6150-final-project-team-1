@@ -1,3 +1,6 @@
+.outter_wrapper {
+    overflow: hidden;
+}
 .feedlist {
     display: grid;
     width: 95%;

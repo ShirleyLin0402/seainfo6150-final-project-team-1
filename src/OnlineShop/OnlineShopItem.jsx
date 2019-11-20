@@ -13,12 +13,12 @@ const OnlineShopItem = props => {
                 <p className={styles.detail_desc}>{props.item.description}</p>
             </h4>
             <p className={styles.product_price}>{props.item.price}</p>
-            <button class={styles.buy_button} onClick={() => alert(`${props.item.description}`)}>Buy Now</button>
+            <button className={styles.buy_button} onClick={() => alert(`${props.item.description}`)}>Buy Now</button>
         </div>
   );
 };
 
 OnlineShopItem.propTypes = {
-  item: PropTypes.array.isRequired
+  item: PropTypes.object.isRequired
 };
 export default OnlineShopItem;

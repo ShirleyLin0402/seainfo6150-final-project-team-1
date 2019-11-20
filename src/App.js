@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import online_data from "./data/onlineshop.json";
+import item from "./data/onlineshop.json";
 import Home from "./Home/Home.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
 import Header from "./Header/Header.jsx";
@@ -45,7 +45,7 @@ function App() {
          <Route
           path="/store"
           exact
-          render={() => <OnlineShop online_data={Object.values(online_data)} />}
+          render={() => <OnlineShop item={Object.values(item)} />}
         />
           <Route path="/ContactUs" exact component={ContactUs} />
         <Route component={Error} />

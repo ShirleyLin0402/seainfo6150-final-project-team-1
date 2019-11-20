@@ -2,18 +2,20 @@ import React from "react";
 import PropTypes from 'prop-types'
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import NavBar from "../NavBar/NavBar";
 import OnlineShopItem from "./OnlineShopItem"
 import styles from './OnlineShop.module.css'
 
 const OnlineShop = props => {
   return (
-      <div>
+      <div className={styles.outter_wrapper}>
         <Header />
-            <ul class={styles.feedlist}>
-            {props.online_data.map(item => (
-                <li class={styles.list} key={item.id}><OnlineShopItem item={item}/></li>
-            ))}
-            </ul>
+        <ul className={styles.feedlist}>
+        {props.item.map(item => (
+            <li className={styles.list} key={item.id}><OnlineShopItem item={item}/></li>
+        ))}
+        </ul>
+        <NavBar />
         <Footer />
       </div>
   );
