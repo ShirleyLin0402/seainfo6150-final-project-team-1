@@ -7,6 +7,7 @@ import { List } from '../../ui/base/list/list';
 import styles from './shop.module.css';
 import { parseQS } from '../../utils/qs';
 import { PurchaseDialog } from './purchase-dialog/purchase-dialog';
+import NavBar from '../../nav/nav-bar';
 const productParams = require('../../data/products.json');
 const giftCardParams = require('../../data/gift-cards.json');
 const allItems = [...productParams, ...giftCardParams].reduce((acc, cur) => {
@@ -36,6 +37,7 @@ const ShopStateless = memo(({ selectedItem, onModalClose, onItemClick }) => {
         </div>
         <List items={giftCardItetms} className={styles.giftCardList}/>
       </section>
+      <NavBar />
       {selectedItem && (
         <PurchaseDialog
           name={selectedItem.name}
