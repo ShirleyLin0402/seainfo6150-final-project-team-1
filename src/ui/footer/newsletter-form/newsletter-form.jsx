@@ -35,7 +35,7 @@ export const NewsLetterForm = () => {
           type="text"
           value={email}
           title="email"
-          placeholder="email"
+          placeholder="sign up for newsletter!"
           onChange={onEmailChange}
           error={startValidating && isEmailError}
         />
@@ -43,7 +43,7 @@ export const NewsLetterForm = () => {
 
       <div>
         <SecondaryButton type="submit" disabled={submitting}>
-          Submit
+          Sign Up
         </SecondaryButton>
       </div>
     </form>
