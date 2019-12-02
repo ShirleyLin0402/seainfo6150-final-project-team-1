@@ -20,7 +20,9 @@ export const PurchaseDialog = memo(({ description, name, price, image, onModalCl
   const container = maybeCreateModalContainer();
   return createPortal((
     <Dialog onBackgroundClicked={onModalClose}>
-      <div className={styles.wrapper}>123</div>
+       <div className={styles.wrapper}>
+       description
+       </div>
     </Dialog>
   ), container);
 });

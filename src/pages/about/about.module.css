@@ -1,0 +1,22 @@
+.div{
+     text-align: center;
+ }
+
+.header{
+    font-size: 30px ;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.text{
+    font-style: italic ;
+    font-size: 25px ;
+}
+
+.img{
+    float:left;
+    position: relative;
+    right:10px;
+    top:10px;
+    width: 300px;
+    height: 200px;
+}

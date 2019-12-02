@@ -55,7 +55,7 @@ class NavBar extends Component {
                         <Link to="/shop">Online Shopping</Link>
                     </li>
                     <li className={styles.menu_item}>
-                        <Link to="/contact">About Us</Link>
+                        <Link to="/About">About Us</Link>
                     </li>
                     <li className={styles.menu_item}>
                         <Link to="/contact">Contact Us</Link>

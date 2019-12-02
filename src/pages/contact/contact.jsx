@@ -6,6 +6,7 @@ import { TitleMedium } from '../../ui/base/typography/typography';
 import { ContactServiceClient } from '../../services/contact/contact-client';
 import { Page } from '../../ui/base/page-container/page-container';
 import styles from './contact.module.css';
+import NavBar from '../../nav/nav-bar';
 
 const TextField = memo(({ value, onChange, title, error }) => (
   <div className={styles.field}>
@@ -57,24 +58,40 @@ export const Contact = () => {
           onChange={onNameChange}
           error={startValidating && isNameError}
         />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <TextField
           value={email}
           title="Email"
           onChange={onEmailChange}
           error={startValidating && isEmailError}
         />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <TextField
           value={content}
           title="Content"
           onChange={onContentChange}
           error={startValidating && isContentError}
         />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className={styles.button}>
           <PrimaryButton type="submit" disabled={submitting} strentch={true}>
             Submit
           </PrimaryButton>
         </div>
       </form>
+      <NavBar/>
     </Page>
   );
 }

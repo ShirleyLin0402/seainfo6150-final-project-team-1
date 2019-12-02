@@ -8,6 +8,7 @@ import { Shop } from './shop/shop';
 import { Header } from '../ui/header/header';
 import { Footer } from '../ui/footer/footer';
 import { NotFound } from './not-found/not-found';
+import { About } from './about/about';
 
 const ScrollToTop = withRouter(({ history }) => {
   useEffect(() => history.listen(() => window.scrollTo(0, 0)), [history]);
@@ -25,6 +26,7 @@ export const Router = () => (
         <Route exact path="/home" component={Home}/>
         <Route exact path="/flavors" component={Flavors}/>
         <Route exact path="/flavors/:id" component={Flavor}/>
+        <Route exact path="/about" component={About}/>
         <Route exact path="/contact" component={Contact}/>
         <Route exact paht="/shop" component={Shop}/>
         <Route path="*" component={NotFound}/ >
