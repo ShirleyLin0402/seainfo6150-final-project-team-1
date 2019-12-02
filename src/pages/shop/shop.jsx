@@ -5,17 +5,13 @@ import { TitleMedium } from '../../ui/base/typography/typography';
 import { Page } from '../../ui/base/page-container/page-container';
 import { List } from '../../ui/base/list/list';
 import styles from './shop.module.css';
-import { parseQS } from '../../utils/qs';
 import { PurchaseDialog } from './purchase-dialog/purchase-dialog';
-import NavBar from '../../nav/nav-bar';
+import { withRouter } from 'react-router-dom';
+import { allItems } from '../../data/all-products';
 const productParams = require('../../data/products.json');
 const giftCardParams = require('../../data/gift-cards.json');
-const allItems = [...productParams, ...giftCardParams].reduce((acc, cur) => {
-  acc.set(cur.id, cur);
-  return acc;
-}, new Map());
 
-const ShopStateless = memo(({ selectedItem, onModalClose, onItemClick }) => {
+const ShopStateless = memo(({ ModalComponent, onItemClick, modalOpen }) => {
   const productItems = useMemo(() => productParams.map(({ price, name, image, id }) => ({
     Component: () => <ShopItem price={price} name={name} image={image} id={id} onItemClick={onItemClick}/>,
   })), [onItemClick]);
@@ -24,7 +20,7 @@ const ShopStateless = memo(({ selectedItem, onModalClose, onItemClick }) => {
   })), [onItemClick]);
 
   return (
-    <Page modalOpen={selectedItem != null}>
+    <Page modalOpen={modalOpen}>
       <section className={styles.section}>
         <div className={styles.title}>
           <TitleMedium text="Mechanics"/>
@@ -37,46 +33,59 @@ const ShopStateless = memo(({ selectedItem, onModalClose, onItemClick }) => {
         </div>
         <List items={giftCardItetms} className={styles.giftCardList}/>
       </section>
-      <NavBar />
-      {selectedItem && (
-        <PurchaseDialog
-          name={selectedItem.name}
-          price={selectedItem.price}
-          image={selectedItem.image}
-          onModalClose={onModalClose}
-          description={selectedItem.description}
-        />
-      )}
+      {modalOpen && <ModalComponent/>}
     </Page>
   );
 });
 
 ShopStateless.propTypes = {
-  onModalClose: PropTypes.func.isRequired,
-  selectedItem: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }).isRequired,
+  onItemClick: PropTypes.func.isRequired,
+  ModalComponent: PropTypes.elementType.isRequired,
+  modalOpen: PropTypes.bool.isRequired,
 }
 
-export const Shop = (() => {
+export const Shop = withRouter(({ history }) => {
   const [selectedItem, setSelectedItem] = useState(undefined);
-  const onModalClose = useCallback(() => {
-    setSelectedItem(undefined);
+  const setSelectedItemFromUrl = useCallback(() => {
+    const itemId = new URLSearchParams(window.location.search).get('id');
+    if (itemId == null) {
+      setSelectedItem(undefined);
+    } else {
+      setSelectedItem(allItems.get(itemId));
+    }
   }, [setSelectedItem]);
+  const closeModal = useCallback(() => {
+    history.push('/shop', { scrollToTop: false });
+  }, [history]);
+  const onPurchaseClicked = useCallback(() => {
+    history.replace(`/checkout/${selectedItem.id}`);
+  }, [history, selectedItem]);
 
-  const onItemClick = useCallback((id) => {
-    const item = allItems.get(id);
-    setSelectedItem(item);
-    window.history.pushState({ id }, item.name, `?id=${id}`);
-  }, [])
+  const ModalComponent = useCallback(() => selectedItem
+   ? (<PurchaseDialog
+        name={selectedItem.name}
+        price={selectedItem.price}
+        image={selectedItem.image}
+        onCancelClicked={closeModal}
+        onPurchaseClicked={onPurchaseClicked}
+        description={selectedItem.description}
+      />)
+    : null, [selectedItem, onPurchaseClicked, closeModal]);
+
+  const onItemClick = useCallback(id => {
+    history.push(`/shop?id=${id}`, { scrollToTop: false });
+  }, [history]);
 
   useEffect(() => {
-    const itemId = parseQS().get('id');
-    setSelectedItem(allItems.get(itemId));
-  }, [setSelectedItem]);
+    setSelectedItemFromUrl();
+    return history.listen(setSelectedItemFromUrl);
+  }, [setSelectedItemFromUrl, history]);
 
-  return <ShopStateless selectedItem={selectedItem} onModalClose={onModalClose} onItemClick={onItemClick}/>
+  return (
+    <ShopStateless
+      modalOpen={selectedItem!=null}
+      ModalComponent={ModalComponent}
+      onItemClick={onItemClick}
+    />
+  );
 });

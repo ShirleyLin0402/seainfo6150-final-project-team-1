@@ -3,10 +3,11 @@ import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 import styles from './button.module.css';
 
-const BasicButton = memo(({ children, type, disabled, kind, strentch }) => (
+const BasicButton = memo(({ children, type, disabled, kind, strentch, onClick }) => (
   <button
     type={type}
     disabled={disabled}
+    onClick={onClick}
     className={classnames(styles[kind], {
       [styles.hoverEnabled]: !disabled,
       [styles.strentch]: strentch
@@ -21,11 +22,12 @@ BasicButton.defaultProps = {
   disabled: false,
 };
 
-export const SecondaryButton = memo(({ children, type, disabled, strentch }) => (
+export const SecondaryButton = memo(({ children, type, disabled, strentch, onClick }) => (
   <BasicButton
     type={type}
     disabled={disabled}
     strentch={strentch}
+    onClick={onClick}
     kind="secondary"
   >
     {children}
@@ -33,11 +35,12 @@ export const SecondaryButton = memo(({ children, type, disabled, strentch }) => 
 ));
 
 
-export const PrimaryButton = memo(({ children, type, disabled, strentch }) => (
+export const PrimaryButton = memo(({ children, type, disabled, strentch, onClick }) => (
   <BasicButton
     type={type}
     disabled={disabled}
     strentch={strentch}
+    onClick={onClick}
     kind="primary"
   >
     {children}
@@ -47,7 +50,8 @@ export const PrimaryButton = memo(({ children, type, disabled, strentch }) => (
 const sharedButtonProps = {
   type: PropTypes.oneOf(['submit', 'reset', 'button']).isRequired,
   disabled: PropTypes.bool,
-  strentch: PropTypes.bool
+  strentch: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 BasicButton.propTypes= {

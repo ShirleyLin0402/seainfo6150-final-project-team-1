@@ -44,8 +44,8 @@
   overflow: hidden;
   border-radius: gridBaseline;
   box-shadow: 10px 5px 5px monoBlackA300;
-  width: calc(gridBaseline * 50);
-  height: calc(gridBaseline * 28);
+  width: calc(gridBaseline * 80);
+  height: calc(gridBaseline * 45);
   animation-name: modal-appear;
   animation-duration: 0.5s;
 }
@@ -58,14 +58,6 @@
     transform: scale(1);
   }
 }
-
-@media screen and (min-width: mediumBreakpoint) {
-  .modalInner {
-    width: calc(gridBaseline * 75);
-    height: calc(gridBaseline * 42);
-  }
-}
-
 
 @media screen and (min-width: largeBreakpoint) {
   .modalInner {
