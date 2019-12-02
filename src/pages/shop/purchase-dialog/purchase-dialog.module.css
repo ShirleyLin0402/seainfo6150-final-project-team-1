@@ -1,5 +1,92 @@
+@value monoWhite from '../../../ui/base/colors/colors.module.css';
+@value gridBaseline, xsmallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../../ui/base/metrics/metrics.module.css';
+
 .wrapper {
-  background-color: white;
+  box-sizing: border-box;
+  background-color: monoWhite;
   height: 100%;
   width: 100%;
+  overflow-y: auto;
+  padding: calc(gridBaseline * 2);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  grid-area: image;
+}
+
+.image > img {
+  max-width: 60%;
+}
+
+.price {
+  text-align: center;
+  margin-top: gridBaseline;
+}
+
+.title {
+  margin-top: gridBaseline;
+}
+
+.description {
+  margin-top: gridBaseline;
+}
+
+.article {
+  grid-area: article;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: gridBaseline;
+  grid-area: buttons;
+}
+
+.button {
+  width: 45%;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .wrapper {
+    padding: calc(gridBaseline * 4);
+  }
+
+  .image > img {
+    max-width: calc(gridBaseline * 30);
+  }
+
+  .title {
+    margin-top: calc(gridBaseline * 2);
+  }
+
+  .buttons {
+    margin-top: calc(gridBaseline * 2);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+      'image article'
+      'image buttons';
+    column-gap: calc(gridBaseline * 4);
+  }
+
+  .image {
+    flex-direction: column;
+  }
+
+  .buttons {
+    margin-bottom: calc(gridBaseline * 4);
+  }
+
+  .title {
+    margin-top: 0;
+  }
 }
