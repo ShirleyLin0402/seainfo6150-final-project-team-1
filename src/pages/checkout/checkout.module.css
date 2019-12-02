@@ -1,0 +1,59 @@
+@value gridBaseline, xsmallBreakpoint, smallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
+@value monoBlackA200, monoBlackA250 from '../../ui/base/colors/colors.module.css';
+
+.pageTitle {
+  margin-bottom: gridBaseline;
+  border-bottom: 1px solid monoBlackA200;
+}
+
+.pageSubTitle {
+  margin-top: gridBaseline;
+}
+
+.horizontal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  composes: horizontal;
+  margin-top: gridBaseline;
+  padding: gridBaseline 0;
+  border-top: 1px solid monoBlackA250;
+  border-bottom: 1px solid monoBlackA250;
+}
+
+.subTotal {
+  composes: horizontal;
+  margin-top: calc(gridBaseline * 2);
+}
+
+.buttons {
+  composes: horizontal;
+  margin: calc(gridBaseline * 2) 0;
+}
+
+.button {
+  width: 45%;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .form {
+    width: calc(gridBaseline * 50);
+    margin: 0 auto;
+  }
+
+  .pageSubTitle, .item {
+    margin-top: calc(gridBaseline * 2);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .form {
+    width: calc(gridBaseline * 80);
+  }
+
+  .pageSubTitle, .item, .subTotal, .buttons {
+    margin-top: calc(gridBaseline * 4);
+  }
+}
