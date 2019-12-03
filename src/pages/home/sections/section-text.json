@@ -3,18 +3,18 @@
      "title":"Check Out Flavors!",
      "description":"Each cake is carefully handcrafted from the freshest, most complimentary ingredients in order to present the flavors in their natural essence.",
      "buttonText":"Flavors",
-     "id":"1"
+     "link": "flavors"
   },
   {
      "title":"About Us",
      "description":"Since opening our first shop in 1981, we have kept our commitment to offer our customers only freshly baked cakes that have not been pre-frozen.",
      "buttonText":"About",
-     "id":"2"
+     "link": "about"
   },
   {
-     "title":"Online Shop",
+     "title":"Shop",
      "description":"Treat Friends and family wth a trip to the shop with one of our seasonal gift cards!",
      "buttonText":"Shop",
-     "id":"3"
+     "link": "shop"
   }
 ]

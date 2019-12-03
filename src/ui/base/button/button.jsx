@@ -47,6 +47,14 @@ export const PrimaryButton = memo(({ children, type, disabled, strentch, onClick
   </BasicButton>
 ));
 
+export const LinkButton = memo(({ children, disabled, href, title }) => (
+  <a
+    href={href}
+    title={title}
+  >
+    {children}
+  </a>
+));
 
 const sharedButtonProps = {
   type: PropTypes.oneOf(['submit', 'reset', 'button']).isRequired,
@@ -61,3 +69,9 @@ BasicButton.propTypes= {
 };
 SecondaryButton.propTypes = sharedButtonProps;
 PrimaryButton.propTypes = sharedButtonProps;
+
+LinkButton.propTypes = {
+  disabled: PropTypes.bool,
+  href: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};

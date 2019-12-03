@@ -22,6 +22,8 @@
   cursor: not-allowed;
 }
 
+
+
 .secondary {
   composes: button;
 
@@ -70,4 +72,29 @@
 .primary:disabled {
   background-color: monoBlackA400;
   color: monoBlackA200;
+}
+
+.link {
+  composes: button;
+
+  background-color: transparent;
+  border-color: monoBlackA300;
+  color: monoBlack;
+}
+
+.link.hoverEnabled:hover {
+  border-color: monoBlackA200;
+}
+
+.link:focus, .secondary:active {
+  border-color: monoBlackA100;
+}
+
+.link:active {
+  background-color: monoBlackA400;
+}
+
+.link:disabled {
+  border-color: monoBlackA300;
+  color: monoBlackA300;
 }
