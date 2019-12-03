@@ -1,3 +1,5 @@
+@value gridBaseline, xsmallBreakpoint, smallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
+
 .div{
      text-align: center;
  }
@@ -13,10 +15,30 @@
 }
 
 .img{
-    float:left;
-    position: relative;
-    right:10px;
-    top:10px;
-    width: 300px;
-    height: 200px;
+    max-width: 800px;
 }
+
+@media screen and (min-width: xsmallBreakpoint) {
+  .form {
+    width: calc(gridBaseline * 30);
+  }
+}
+
+@media screen and (min-width: smallBreakpoint) {
+  .form {
+    width: calc(gridBaseline * 40);
+  }
+}
+
+@media screen and (min-width: mediumBreakpoint) {
+  .form {
+    width: calc(gridBaseline * 60);
+  }
+}
+
+@media screen and (min-width: largeBreakpoint) {
+  .form {
+    width: calc(gridBaseline * 80);
+  }
+}
+

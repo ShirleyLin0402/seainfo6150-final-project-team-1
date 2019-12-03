@@ -20,7 +20,10 @@ export const About = () => {
             </p>
             <br></br>
             <br></br>
-            <img src="/images/AboutUs.jpg" alt="CakeShop"/>
+            <figure>
+            <img className={styles.img} src="/images/AboutUs.jpg" alt="CakeShop"/>
+            </figure>
+            
             <br></br>
             <br></br>
             <br></br>
@@ -30,7 +33,9 @@ export const About = () => {
             </p>
             <br></br>
             <br></br>
-            <img src="/images/mengbulang.jpg" alt="mengbulang"/>
+            <figure>
+            <img className={styles.img} src="/images/mengbulang.jpg" alt="mengbulang"/>
+            </figure>
             <br></br>
             <br></br>
 
@@ -53,7 +58,9 @@ export const About = () => {
 
             <br></br>
             <br></br>
-            <img src="/images/harbsfruit.jpg" alt="harbsfruit"/>
+            <figure>
+            <img className={styles.img} src="/images/harbsfruit.jpg" alt="harbsfruit"/>
+            </figure>
             <br></br>
             <br></br>
             <h1 className={styles.header}>
@@ -74,8 +81,9 @@ export const About = () => {
 
            <br></br>
             <br></br>
-
-            <img src="/images/cake3.jpg" alt="cake3"/>
+            <figure>
+            <img className={styles.img} src="/images/cake3.jpg" alt="cake3"/>
+            </figure>
             <br></br>
             <br></br>
             <h1 className={styles.header}>
