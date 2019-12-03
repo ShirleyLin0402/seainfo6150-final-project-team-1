@@ -47,6 +47,7 @@ export const PrimaryButton = memo(({ children, type, disabled, strentch, onClick
   </BasicButton>
 ));
 
+
 const sharedButtonProps = {
   type: PropTypes.oneOf(['submit', 'reset', 'button']).isRequired,
   disabled: PropTypes.bool,

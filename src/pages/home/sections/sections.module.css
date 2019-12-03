@@ -15,17 +15,21 @@
   margin-bottom: calc(gridBaseline * 2);
 }
 
-.button {
-  composes: textMedium from '../../../ui/base/font/font.module.css';
-
-  display: none;
+.link {
+  margin-top: gridBaseline;
+  text-align: center;
+  font-weight: bold;
 }
 
-@media screen and (min-width: xsmallBreakpoint) {  
+.link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: xsmallBreakpoint) {
   .title {
     margin: calc(gridBaseline * 4) 0;
   }
-  
+
   .description {
     margin-bottom: calc(gridBaseline * 4);
   }
