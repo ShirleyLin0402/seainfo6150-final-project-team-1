@@ -16,6 +16,7 @@
 }
 .button{
   align-items: center;
+  border-color: black;
 
 }
 
@@ -23,6 +24,7 @@
   margin-top: gridBaseline;
   text-align: center;
   font-weight: bold;
+
 }
 
 .link:hover {

@@ -3,7 +3,8 @@
 .img {
   display: flex;
   justify-content: center;
-  height: calc(gridBaseline * 20);
+  height: calc(gridBaseline * 60);
+  overflow: hidden;
 }
 
 .img > img {

@@ -23,6 +23,6 @@ export const Flavor = () => {
   if (flavor == null) {
     return <Redirect to="/404"/>
   }
-  const { title, description, image } = flavor;
-  return <FLavorPage title={title} description={description} image={image} />
+  const { title, description, detailedimage } = flavor;
+  return <FLavorPage title={title} description={description} image={detailedimage} />
 }

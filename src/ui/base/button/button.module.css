@@ -77,24 +77,24 @@
 .link {
   composes: button;
 
-  background-color: transparent;
-  border-color: monoBlackA300;
   color: monoBlack;
+  background-color: colorBrand;
 }
 
 .link.hoverEnabled:hover {
-  border-color: monoBlackA200;
+  background-color: colorBrandLight;
 }
 
-.link:focus, .secondary:active {
-  border-color: monoBlackA100;
+.link:focus, .primary:active {
+  background-color: colorBrandLight;
+  border-color: colorBrandDark;
 }
 
 .link:active {
-  background-color: monoBlackA400;
+  background-color: colorCanvaBrandDark;
 }
 
 .link:disabled {
-  border-color: monoBlackA300;
-  color: monoBlackA300;
+  background-color: monoBlackA400;
+  color: monoBlackA200;
 }
