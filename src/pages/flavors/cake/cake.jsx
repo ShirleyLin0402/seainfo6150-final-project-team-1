@@ -7,7 +7,7 @@ import styles from './cake.module.css';
 export const Cake = memo(({ id, title, description, image }) => (
   <section className={styles.section}>
     <div className={styles.img}>
-      <img src={image} alt={title} style={{ height: '100%' }}/>
+      <a href={`/flavors/${id}`}><img src={image} alt={title} style={{ height: '100%' }}/> </a>
     </div>
     <div className={styles.titleWrap}>
       <TitleMedium text={title} className={styles.title}/>

@@ -7,9 +7,7 @@ const flavorParams = require('../../data/flavors.json');
 
 export const FLavorPage = memo(({ title, description, image }) => (
   <Page>
-    <div className={styles.img}>
       <img src={image} alt={title}/>
-    </div>
     <div className={styles.title}>
       <TitleMedium text={title}/>
     </div>
