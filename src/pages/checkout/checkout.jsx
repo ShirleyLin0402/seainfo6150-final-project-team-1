@@ -6,7 +6,7 @@ import { PrimaryButton, SecondaryButton } from '../../ui/base/button/button';
 import { allItems } from '../../data/all-products';
 import styles from './checkout.module.css';
 
-const CheckoutStateless = memo(({ name, price, onContinueClicked }) => (
+const CheckoutStateless = memo(({ name, price, onContinueClicked, onCheckoutClicked }) => (
   <Page>
     <div className={styles.pageTitle}>
       <TitleLarge text="Cart"/>
@@ -38,7 +38,7 @@ const CheckoutStateless = memo(({ name, price, onContinueClicked }) => (
             </SecondaryButton>
           </div>
           <div className={styles.button}>
-            <PrimaryButton type="submit" title="checkout" strentch>
+            <PrimaryButton type="submit" title="checkout" strentch onClick={onCheckoutClicked}>
               Checkout
             </PrimaryButton>
           </div>
@@ -51,7 +51,8 @@ export const Checkout = withRouter(({ history }) => {
   const { id } = useParams();
   const item = allItems.get(id);
   const onContinueClicked = useCallback(() => history.push('/shop'), [history]);
+  const onCheckoutClicked = useCallback(() => history.push('/result'), [history]);
   return item == null
     ? <Redirect to="/404"/>
-    : <CheckoutStateless name={item.name} price={item.price} onContinueClicked={onContinueClicked}/>
+    : <CheckoutStateless name={item.name} price={item.price} onContinueClicked={onContinueClicked} onCheckoutClicked={onCheckoutClicked}/>
 });

@@ -34,6 +34,7 @@ const ShopStateless = memo(({ ModalComponent, onItemClick, modalOpen }) => {
         </div>
         <List items={giftCardItetms} className={styles.giftCardList}/>
       </section>
+      <NavBar />
       {modalOpen && <ModalComponent/>}
       <NavBar/>
     </Page>
