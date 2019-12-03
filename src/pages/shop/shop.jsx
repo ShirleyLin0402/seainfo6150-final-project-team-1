@@ -8,6 +8,7 @@ import styles from './shop.module.css';
 import { PurchaseDialog } from './purchase-dialog/purchase-dialog';
 import { withRouter } from 'react-router-dom';
 import { allItems } from '../../data/all-products';
+import NavBar from '../../nav/nav-bar';
 const productParams = require('../../data/products.json');
 const giftCardParams = require('../../data/gift-cards.json');
 
@@ -33,6 +34,7 @@ const ShopStateless = memo(({ ModalComponent, onItemClick, modalOpen }) => {
         </div>
         <List items={giftCardItetms} className={styles.giftCardList}/>
       </section>
+      <NavBar />
       {modalOpen && <ModalComponent/>}
     </Page>
   );

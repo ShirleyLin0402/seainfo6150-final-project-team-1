@@ -5,6 +5,7 @@ import { Flavors } from './flavors/flavors';
 import { Flavor } from './flavor/flavor';
 import { Contact } from './contact/contact';
 import { Checkout } from './checkout/checkout';
+import { Result } from './result/result';
 import { Shop } from './shop/shop';
 import { Header } from '../ui/header/header';
 import { Footer } from '../ui/footer/footer';
@@ -33,6 +34,7 @@ export const Router = () => (
         <Route exact path="/contact" component={Contact}/>
         <Route exact path="/shop" component={Shop}/>
         <Route exact path="/checkout/:id" component={Checkout}/>
+        <Route exact path="/result" component={Result}/>
         <Route path="*" component={NotFound}/>
       </Switch>
     <Footer/>

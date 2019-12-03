@@ -1,0 +1,44 @@
+@value gridBaseline, xsmallBreakpoint, smallBreakpoint, mediumBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
+@value monoBlackA300, monoBlackA200 from '../../ui/base/colors/colors.module.css';
+
+.pageTitle {
+  margin-bottom: gridBaseline;
+  border-bottom: 1px solid monoBlackA200;
+}
+.orderStatus {
+    text-align: center;
+}
+.textwrapper {
+   margin: 2rem;
+}
+.checkMark {
+    display: inline-block;
+    vertical-align: middle;
+    width:32px;
+    height: 32px;
+    margin-top: -.5rem;
+    margin-right: 1rem;
+}
+.text {
+    display: inline-block;
+}
+
+.btn > a {
+    display: block;
+    margin: 5rem auto;
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+    border: 1px;
+    border-color: monoBlackA300;
+    border-style: solid;
+    border-radius: .3rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+.btn > a:hover{
+    border: 1px;
+    border-style: solid;
+    border-color: monoBlackA200;
+}
