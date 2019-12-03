@@ -15,6 +15,12 @@ export const TitleMedium = memo(({ text, className }) => (
   </h4>
 ));
 
+export const TitleMediumLeft = memo(({ text, className }) => (
+  <h6 className={classnames(className, styles.titleMediumLeft)}>
+    {text}
+  </h6>
+));
+
 export const TextMedium = memo(({ text, className }) => (
   <p className={classnames(className, styles.textMedium)}>
     {text}
@@ -40,6 +46,7 @@ const sharedPropTypes = {
 
 TitleSmall.propTypes = sharedPropTypes;
 TitleMedium.propTypes = sharedPropTypes;
+TitleMediumLeft.propTypes = sharedPropTypes;
 TitleLarge.propTypes = sharedPropTypes;
 TextMedium.propTypes = sharedPropTypes;
 TextCaption.propTypes = sharedPropTypes;

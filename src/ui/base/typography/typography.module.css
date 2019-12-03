@@ -5,6 +5,11 @@
   text-align: center;
   color: monoBlack;
 }
+.titleMediumLeft {
+  composes: titleMediumLeft from '../font/font.module.css';
+  text-align: left;
+  color: monoBlack;
+}
 
 .titleMedium {
   composes: titleMedium from '../font/font.module.css';

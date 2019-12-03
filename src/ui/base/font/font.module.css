@@ -37,6 +37,15 @@
   line-height: 1.2;
 }
 
+.titleMediumLeft {
+  composes: fontSmoothing;
+  composes: title;
+
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
 .titleSmall {
   composes: fontSmoothing;
   composes: title;

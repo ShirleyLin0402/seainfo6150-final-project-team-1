@@ -3,6 +3,7 @@ import { PrimaryButton } from '../../ui/base/button/button';
 import { TextInput } from '../../ui/base/form/text-input/text-input';
 import { useNonEmptyTextinputState } from '../../ui/base/form/text-input/use-textinput-state';
 import { TitleMedium } from '../../ui/base/typography/typography';
+import { TitleMediumLeft } from '../../ui/base/typography/typography';
 import { ContactServiceClient } from '../../services/contact/contact-client';
 import { Page } from '../../ui/base/page-container/page-container';
 import styles from './contact.module.css';
@@ -10,7 +11,21 @@ import NavBar from '../../nav/nav-bar';
 
 const TextField = memo(({ value, onChange, title, error }) => (
   <div className={styles.field}>
-    <TitleMedium text={title}/>
+    <TitleMediumLeft text={title}/>
+    <TextInput
+      type="text"
+      value={value}
+      title={title}
+      error={error}
+      onChange={onChange}
+      placeholder={title}
+    />
+  </div>
+));
+
+const TextField1 = memo(({ value, onChange, title, error }) => (
+  <div className={styles.field1}>
+    <TitleMediumLeft text={title}/>
     <TextInput
       type="text"
       value={value}
@@ -74,7 +89,7 @@ export const Contact = () => {
         <br></br>
         <br></br>
         <br></br>
-        <TextField
+        <TextField1
           value={content}
           title="Content"
           onChange={onContentChange}
