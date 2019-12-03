@@ -9,7 +9,9 @@ export const Cake = memo(({ id, title, description, image }) => (
     <div className={styles.img}>
       <img src={image} alt={title} style={{ height: '100%' }}/>
     </div>
-    <TitleMedium text={title}/>
+    <div className={styles.titleWrap}>
+      <TitleMedium text={title} className={styles.title}/>
+    </div>
     <div className={styles.link}>
       <InternalLink href={`/flavors/${id}`} title={title}>
         Detail
