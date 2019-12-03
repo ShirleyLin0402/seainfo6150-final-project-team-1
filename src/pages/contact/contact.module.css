@@ -16,6 +16,13 @@
   margin-top: calc(gridBaseline * 2);
 }
 
+.field1{
+   display: flex;
+  flex-direction: column;
+  margin-bottom: calc(gridBaseline * 2);
+  height: 300px;
+
+}
 @media screen and (min-width: xsmallBreakpoint) {
   .form {
     width: calc(gridBaseline * 30);
