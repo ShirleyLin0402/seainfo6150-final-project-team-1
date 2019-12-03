@@ -1,4 +1,4 @@
-@value gridBaseline, xsmallBreakpoint from '../../../ui/base/metrics/metrics.module.css';
+@value gridBaseline, middleBaseline, xsmallBreakpoint from '../../../ui/base/metrics/metrics.module.css';
 
 .section {
   display: flex;
@@ -17,8 +17,21 @@
   height: calc(gridBaseline * 12);
 }
 
-.link {
+.titleWrap {
   margin-top: gridBaseline;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.link {
+  margin-top: middleBaseline;
   text-align: center;
 }
 
