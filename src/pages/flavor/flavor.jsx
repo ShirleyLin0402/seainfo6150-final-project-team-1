@@ -13,7 +13,7 @@ export const FLavorPage = memo(({ title, description, image }) => (
     <div className={styles.title}>
       <TitleMedium text={title}/>
     </div>
-    <TextMedium text={description}/>
+    <TextMedium text={description} className={styles.text}/>
   </Page>
 ));
 

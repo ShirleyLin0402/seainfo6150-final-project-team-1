@@ -1,18 +1,32 @@
 @value gridBaseline, xsmallBreakpoint, largeBreakpoint from '../../ui/base/metrics/metrics.module.css';
 
 .img {
+  position: relative;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  width: calc(gridBaseline * 80);
   height: calc(gridBaseline * 60);
   overflow: hidden;
+  background-color: rgb(252, 249, 208);
+  box-shadow: 3px 10px 10px grey;
 }
 
 .img > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%,-50%);
   height: 100%;
 }
 
 .title {
   margin: calc(gridBaseline * 2) 0 gridBaseline;
+}
+
+.text {
+  text-align: center;
 }
 
 @media screen and (min-width: xsmallBreakpoint) {
