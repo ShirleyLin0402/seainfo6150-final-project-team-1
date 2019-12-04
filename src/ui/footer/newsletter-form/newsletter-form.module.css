@@ -1,16 +1,22 @@
 @value gridBaseline, xsmallBreakpoint, smallBreakpoint, mediumBreakpoint from '../../base/metrics/metrics.module.css';
 
 .form {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   margin: gridBaseline 0;
   padding: 0 gridBaseline;
   height: calc(gridBaseline * 4);
+
 }
 
 .input {
   width: calc(gridBaseline * 20);
 }
+
+.button{
+  display:flex;
+}
+
 
 @media screen and (min-width: xsmallBreakpoint) {
   .form {
