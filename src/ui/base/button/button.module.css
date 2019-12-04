@@ -77,8 +77,8 @@
 .link {
   composes: button;
 
-  color: monoBlack;
-  background-color: colorBrand;
+  color: #f7e8a5;
+  background-color: #f7e8a5;
 }
 
 .link.hoverEnabled:hover {

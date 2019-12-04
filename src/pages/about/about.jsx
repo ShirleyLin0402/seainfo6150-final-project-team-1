@@ -14,22 +14,26 @@ export const About = () => {
             <br></br>
             </h1>
 
-            <p className={styles.text}>
+            <p className={styles.begin}>
                 "Ever since we started, <br></br>
-                our one and only wish has been to make our customers say “DELICIOUS!” from the bottom of their hearts."        
+                our one and only wish has been to make our customers say “DELICIOUS!” from the bottom of their hearts."
             </p>
             <br></br>
             <br></br>
             <figure>
             <img className={styles.img} src="/images/AboutUs.jpg" alt="CakeShop"/>
             </figure>
-            
+
             <br></br>
             <br></br>
             <br></br>
-            
+
             <p className={styles.text}>
-            HARBS is a café born in Japan, pursuing freshness and hand-made quality above all else. Ever since we started, our one and only wish has been to make our customers say “DELICIOUS!” from the bottom of their hearts. We hope you savor every moment of joy you experience here at HARBS.
+            HARBS is a café born in Japan, <br></br>
+            pursuing freshness and hand-made quality above all else. <br></br>
+            Ever since we started, <br></br>
+            our one and only wish has been to make our customers say “DELICIOUS!” from the bottom of their hearts.  <br></br>
+            We hope you savor every moment of joy you experience here at HARBS.
             </p>
             <br></br>
             <br></br>
@@ -50,7 +54,8 @@ export const About = () => {
             This question was the starting point for HARBS.<br></br>
             We were particular about size 8 (24cm)<br></br>
             because we pursued satisfaction of the heart.<br></br>
-            We studied the levels of sweetness and fluffiness, and the nature of the ingredients, and finally arrived at the ideal recipe.<br></br>
+            We studied the levels of sweetness and fluffiness, <br></br>
+            and the nature of the ingredients, and finally arrived at the ideal recipe.<br></br>
             Our cake is big but delicious, so even a lady can eat it whole. <br></br>
             That’s the HARBS cake.<br></br>
             We want you to enjoy the happy feeling when you eat the whole cake.<br></br>
@@ -73,7 +78,8 @@ export const About = () => {
              but we have not changed the handmade process at all.<br></br>
              In order to bring freshly made flavors to our customers,<br></br>
              our cakes are never frozen.<br></br>
-             We make only as many cakes as we sell, each hand made, and deliver them to our stores by our own delivery system from our own factories strategically located nearby for freshness.<br></br>
+             We make only as many cakes as we sell, each hand made, <br></br>
+             and deliver them to our stores by our own delivery system from our own factories strategically located nearby for freshness.<br></br>
              In order to prevent deterioration which starts as soon as a cake is cut,<br></br>
              our cakes are kept whole in cases and sliced one piece at a time as orders are placed.<br></br>
              All this because we want to deliver the freshest products to our customers.
