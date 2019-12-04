@@ -14,6 +14,7 @@
 .img {
   margin-top: auto;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: calc(gridBaseline * 12);
 }
@@ -22,11 +23,6 @@
   margin-top: gridBaseline;
   height: 3.2rem;
   display: flex;
-<<<<<<< HEAD
-=======
-  align-items: center;
-
->>>>>>> de864035bea98f95d7f4f6aa2799c92d4f84ce11
 }
 
 .title {
