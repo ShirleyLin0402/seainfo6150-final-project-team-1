@@ -10,6 +10,7 @@
   margin-bottom: gridBaseline;
 }
 
+
 .img {
   margin-top: auto;
   display: flex;
@@ -28,6 +29,14 @@
   margin: 0 auto;
   font-weight: bold;
   font-size: 1.6rem;
+}
+
+.button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border:3rem;
 }
 
 .link {
