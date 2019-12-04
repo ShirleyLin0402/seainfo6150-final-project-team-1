@@ -67,16 +67,12 @@ export const Contact = () => {
   return (
     <Page>
       <form onSubmit={onSubmit} className={styles.form}>
-        <TextField 
+        <TextField
           value={name}
           title="Your name"
           onChange={onNameChange}
           error={startValidating && isNameError}
         />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <br></br>
         <TextField
           value={email}
@@ -85,20 +81,12 @@ export const Contact = () => {
           error={startValidating && isEmailError}
         />
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <TextField1
           value={content}
           title="Content"
           onChange={onContentChange}
           error={startValidating && isContentError}
         />
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <br></br>
         <div className={styles.button}>
           <PrimaryButton type="submit" disabled={submitting} strentch={true}>
