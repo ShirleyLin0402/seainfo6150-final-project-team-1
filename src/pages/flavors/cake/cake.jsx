@@ -13,6 +13,7 @@ export const Cake = memo(({ id, title, description, image }) => (
       <TitleMedium text={title} className={styles.title}/>
     </div>
     <div className={styles.link}>
+{/*        <button onclick={`/flavors/${id}`}  title={title}>Detail</button> */}
       <InternalLink href={`/flavors/${id}`} title={title}>
         Detail
       </InternalLink>

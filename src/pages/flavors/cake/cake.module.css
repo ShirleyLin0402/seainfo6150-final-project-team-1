@@ -13,6 +13,7 @@
 .img {
   margin-top: auto;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: calc(gridBaseline * 12);
 }
@@ -21,7 +22,6 @@
   margin-top: gridBaseline;
   height: 3.2rem;
   display: flex;
-  align-items: center;
 }
 
 .title {
